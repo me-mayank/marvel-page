@@ -32,8 +32,17 @@ body{
     cursor: url("./thor.png") , auto;
 }
 
-h1{
-   color: rgb(105,105,105);
-   text-align: center; 
+h1 {
+   color: rgb(105, 105, 105);  /* Dark grey color */
+   text-align: center;
+   text-decoration: underline;  /* Adds underline */
+   text-decoration-thickness: 3px;  /* Makes the underline thicker */
+   transition: color 0.3s ease, text-decoration-color 0.3s ease;  /* Smooth transitions */
+}
+
+h1:hover {
+   color: rgb(255, 0, 0);  /* Red color on hover */
+   text-decoration-color: rgb(255, 0, 0);  /* Underline color changes to red */
+   font-weight: bold;  /* Makes the text bold on hover */
 }
 
